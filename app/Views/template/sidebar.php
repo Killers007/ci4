@@ -19,11 +19,17 @@
             <?php foreach ($menu as $key => $valueFirst): ?>
 
                 <?php if (!isset($valueFirst->child)): ?>
+                        
+                    <?php  
+                    $searchModules = $valueFirst->modules;
+                    $_search = current(array_filter($notif, function($e) use($searchModules) { return $e['modules']==$searchModules; })); 
+                    $_foundNotif = is_array($_search) ? $_search['count'] : ''; 
+                    ?>
 
                     <li class="nav-item <?php echo $valueFirst->modules == $modules ? 'active' : '' ?>">
                         <a href="<?php echo base_url($valueFirst->url) ?>"><i class="menu-livicon" data-icon="desktop"></i>
                             <span class="menu-title" data-i18n=""><?php echo $valueFirst->label ?></span>
-                            <span class="badge badge-light-danger badge-pill badge-round float-right"><?php echo ($valueFirst->modules == $notif['modules'] && $notif['count'] > 0) ? $notif['count'] : ''  ?></span>
+                            <span class="badge badge-light-danger badge-pill badge-round float-right"><?php echo $_foundNotif  ?></span>
                         </a>
                     </li>
 
@@ -38,10 +44,17 @@
                                 <?php foreach ($valueFirst->child as $key => $valueSecond): ?>
 
                                     <?php if (!isset($valueSecond->child)): ?>
+
+                                        <?php  
+                                        $searchModules = $valueSecond->modules;
+                                        $_search = current(array_filter($notif, function($e) use($searchModules) { return $e['modules']==$searchModules; })); 
+                                        $_foundNotif = is_array($_search) ? $_search['count'] : ''; 
+                                        ?>
                                         
                                         <li class="<?php echo $valueSecond->modules == $modules ? 'active' : '' ?>">
                                             <a href="<?php echo base_url($valueSecond->url) ?>"><i class="bx bx-right-arrow-alt"></i>
-                                                <span class="menu-item" data-i18n="nav.sk_starter_kit.1_column"><?php echo $valueSecond->label ?></span>
+                                                <span class="menu-item" data-i18n="nav.sk_starter_kit.1_column"><?php echo $valueSecond->label ?></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span class="badge badge-light-danger badge-pill badge-round float-right"><?php echo $_foundNotif  ?></span>
                                             </a>
                                         </li>
 
@@ -55,7 +68,17 @@
 
                                                     <?php foreach ($valueSecond->child as $key => $valueThird): ?>
 
-                                                        <li class="<?php echo $valueThird->modules == $modules ? 'active' : '' ?>"><a href="<?php echo base_url($valueThird->url) ?>"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Third Level"><?php echo $valueThird->label ?></span></a>
+                                                         <?php  
+                                                        $searchModules = $valueThird->modules;
+                                                        $_search = current(array_filter($notif, function($e) use($searchModules) { return $e['modules']==$searchModules; })); 
+                                                        $_foundNotif = is_array($_search) ? $_search['count'] : ''; 
+                                                        ?>
+
+                                                        <li class="<?php echo $valueThird->modules == $modules ? 'active' : '' ?>">
+                                                            <a href="<?php echo base_url($valueThird->url) ?>"><i class="bx bx-right-arrow-alt"></i>
+                                                                <span class="menu-item" data-i18n="Third Level"><?php echo $valueThird->label ?></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                 <span class="badge badge-light-danger badge-pill badge-round float-right"><?php echo $_foundNotif  ?></span>
+                                                            </a>
                                                         </li>
 
                                                     <?php endforeach ?>

@@ -1,0 +1,266 @@
+[
+    {
+        "navId": 1,
+        "navNama": "Pra Tes Kesehatan",
+        "navUrl": "",
+        "navIcon": "fa fa-desktop",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 2,
+        "navNama": "Biaya",
+        "navUrl": "biaya",
+        "navIcon": "fa fa-money",
+        "navModul": "biaya",
+        "navParentid": 1
+    },
+    {
+        "navId": 3,
+        "navNama": "Kategori Klinik",
+        "navUrl": "kategori_klinik",
+        "navIcon": "fa fa-bell",
+        "navModul": "kategori_klinik",
+        "navParentid": 1
+    },
+    {
+        "navId": 4,
+        "navNama": "Jaga Klinik",
+        "navUrl": "jaga_klinik",
+        "navIcon": "fa fa-users",
+        "navModul": "jaga_klinik",
+        "navParentid": 1
+    },
+    {
+        "navId": 5,
+        "navNama": "Jalur Masuk",
+        "navUrl": "admin\/dashboard",
+        "navIcon": "fa fa fa-mortar-board",
+        "navModul": "jalur_masuk",
+        "navParentid": null
+    },
+    {
+        "navId": 6,
+        "navNama": "Master",
+        "navUrl": "",
+        "navIcon": "fa fa-paper-plane-o",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 7,
+        "navNama": "Peserta",
+        "navUrl": "mpeserta",
+        "navIcon": "fa fa-user",
+        "navModul": "mpeserta",
+        "navParentid": 6
+    },
+    {
+        "navId": 8,
+        "navNama": "Panduan Peserta",
+        "navUrl": "panduan",
+        "navIcon": "fa fa-book",
+        "navModul": "panduan",
+        "navParentid": 6
+    },
+    {
+        "navId": 9,
+        "navNama": "Klinik",
+        "navUrl": "klinik",
+        "navIcon": "fa fa-bomb",
+        "navModul": "klinik",
+        "navParentid": 6
+    },
+    {
+        "navId": 10,
+        "navNama": "Dokter",
+        "navUrl": "mdokter",
+        "navIcon": "fa fa-user-md",
+        "navModul": "mdokter",
+        "navParentid": 6
+    },
+    {
+        "navId": 11,
+        "navNama": "Masa Tes Kesehatan",
+        "navUrl": "",
+        "navIcon": "fa fa-heart-o",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 12,
+        "navNama": "Verifikasi Peserta",
+        "navUrl": "verifikasi",
+        "navIcon": "fa fa fa fa-pencil-square-o",
+        "navModul": "verifikasi",
+        "navParentid": 11
+    },
+    {
+        "navId": 13,
+        "navNama": "Pemeriksaan",
+        "navUrl": "pemeriksaan",
+        "navIcon": "fa fa-clipboard",
+        "navModul": "pemeriksaan",
+        "navParentid": 11
+    },
+    {
+        "navId": 14,
+        "navNama": "Transaksi",
+        "navUrl": "",
+        "navIcon": "fa fa fa-adjust",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 15,
+        "navNama": "Tagihan",
+        "navUrl": "tagihan",
+        "navIcon": "fa fa fa-money",
+        "navModul": "tagihan",
+        "navParentid": 14
+    },
+    {
+        "navId": 16,
+        "navNama": "Bypass",
+        "navUrl": "bypass",
+        "navIcon": "fa fa-arrows-v",
+        "navModul": "bypass",
+        "navParentid": 14
+    },
+    {
+        "navId": 17,
+        "navNama": "Bypass Reguler",
+        "navUrl": "bypass_reguler",
+        "navIcon": "fa fa fa-bookmark",
+        "navModul": "bypass_reguler",
+        "navParentid": 14
+    },
+    {
+        "navId": 18,
+        "navNama": "Anjay mabar",
+        "navUrl": "9",
+        "navIcon": "fa fa fa fa fa fa-arrows-h",
+        "navModul": "9",
+        "navParentid": null
+    },
+    {
+        "navId": 19,
+        "navNama": "Laporan",
+        "navUrl": "",
+        "navIcon": "fa fa fa-book",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 20,
+        "navNama": "Per Kategori dan Klinik",
+        "navUrl": "laporan",
+        "navIcon": "fa i i-flow-tree",
+        "navModul": "laporan",
+        "navParentid": 19
+    },
+    {
+        "navId": 21,
+        "navNama": "Peserta Bermasalah",
+        "navUrl": "report\/report_peserta\/ringkasan",
+        "navIcon": "fa fa fa-ambulance",
+        "navModul": "report",
+        "navParentid": 19
+    },
+    {
+        "navId": 22,
+        "navNama": "Peserta per Klinik",
+        "navUrl": "report\/report_peserta\/detail_ringkasan",
+        "navIcon": "fa fa-shopping-cart",
+        "navModul": "report",
+        "navParentid": 19
+    },
+    {
+        "navId": 23,
+        "navNama": "Pembayaran",
+        "navUrl": "laporan\/pembayaran",
+        "navIcon": "fa fa fa-asterisk",
+        "navModul": "laporan",
+        "navParentid": 19
+    },
+    {
+        "navId": 24,
+        "navNama": "Sinkron",
+        "navUrl": "sinkron",
+        "navIcon": "fa fa fa-asterisk",
+        "navModul": "sinkron",
+        "navParentid": null
+    },
+    {
+        "navId": 25,
+        "navNama": "Setting",
+        "navUrl": "",
+        "navIcon": "fa fa-cogs",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 26,
+        "navNama": "Hak Akses",
+        "navUrl": "hak_akses",
+        "navIcon": "fa fa fa-beer",
+        "navModul": "hak_akses",
+        "navParentid": 25
+    },
+    {
+        "navId": 27,
+        "navNama": "Modul",
+        "navUrl": "modul",
+        "navIcon": "fa fa-asterisk",
+        "navModul": "modul",
+        "navParentid": 25
+    },
+    {
+        "navId": 28,
+        "navNama": "Nested Menu",
+        "navUrl": "",
+        "navIcon": "fa fa-arrows",
+        "navModul": "",
+        "navParentid": 25
+    },
+    {
+        "navId": 29,
+        "navNama": "Menu Navigasi",
+        "navUrl": "admin\/dashboard\/nestable",
+        "navIcon": "fa fa fa fa-toggle-down",
+        "navModul": "navigasi",
+        "navParentid": 28
+    },
+    {
+        "navId": 30,
+        "navNama": "Child Nav 2",
+        "navUrl": "navigasi2",
+        "navIcon": "fa fa-toggle-down",
+        "navModul": "navigasi2",
+        "navParentid": 28
+    },
+    {
+        "navId": 31,
+        "navNama": "Child Nav 3",
+        "navUrl": "navigasi3",
+        "navIcon": "fa fa-toggle-down",
+        "navModul": "navigasi3",
+        "navParentid": 28
+    },
+    {
+        "navId": 32,
+        "navNama": "Child Nav 1",
+        "navUrl": "anjay",
+        "navIcon": "fa fa fa fa-toggle-down",
+        "navModul": "navigasi1",
+        "navParentid": 28
+    },
+    {
+        "navId": 33,
+        "navNama": "Role",
+        "navUrl": "role",
+        "navIcon": "fa fa fa-briefcase",
+        "navModul": "role",
+        "navParentid": 25
+    }
+]

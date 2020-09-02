@@ -1,0 +1,114 @@
+[
+    {
+        "navId": 1,
+        "navNama": "Pra Tes Kesehatan",
+        "navUrl": "",
+        "navIcon": "fa fa-desktop",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 2,
+        "navNama": "Biaya",
+        "navUrl": "biaya",
+        "navIcon": "fa fa-money",
+        "navModul": "biaya",
+        "navParentid": 1
+    },
+    {
+        "navId": 3,
+        "navNama": "Kategori Klinik",
+        "navUrl": "kategori_klinik",
+        "navIcon": "fa fa-bell",
+        "navModul": "kategori_klinik",
+        "navParentid": 1
+    },
+    {
+        "navId": 4,
+        "navNama": "Jaga Klinik",
+        "navUrl": "jaga_klinik",
+        "navIcon": "fa fa-users",
+        "navModul": "jaga_klinik",
+        "navParentid": 1
+    },
+    {
+        "navId": 5,
+        "navNama": "Jalur Masuk",
+        "navUrl": "admin\/dashboard",
+        "navIcon": "fa fa fa-mortar-board",
+        "navModul": "jalur_masuk",
+        "navParentid": null
+    },
+    {
+        "navId": 6,
+        "navNama": "Setting",
+        "navUrl": "",
+        "navIcon": "fa fa-cogs",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 7,
+        "navNama": "Hak Akses",
+        "navUrl": "hak_akses",
+        "navIcon": "fa fa fa-beer",
+        "navModul": "hak_akses",
+        "navParentid": 6
+    },
+    {
+        "navId": 8,
+        "navNama": "Modul",
+        "navUrl": "modul",
+        "navIcon": "fa fa-asterisk",
+        "navModul": "modul",
+        "navParentid": 6
+    },
+    {
+        "navId": 9,
+        "navNama": "Nested Menu",
+        "navUrl": "",
+        "navIcon": "fa fa-arrows",
+        "navModul": "",
+        "navParentid": 6
+    },
+    {
+        "navId": 10,
+        "navNama": "Menu Navigasi",
+        "navUrl": "admin\/dashboard\/nestable",
+        "navIcon": "fa fa fa fa-toggle-down",
+        "navModul": "navigasi",
+        "navParentid": 9
+    },
+    {
+        "navId": 11,
+        "navNama": "Child Nav 2",
+        "navUrl": "navigasi2",
+        "navIcon": "fa fa-toggle-down",
+        "navModul": "navigasi2",
+        "navParentid": 9
+    },
+    {
+        "navId": 12,
+        "navNama": "Child Nav 3",
+        "navUrl": "navigasi3",
+        "navIcon": "fa fa-toggle-down",
+        "navModul": "navigasi3",
+        "navParentid": 9
+    },
+    {
+        "navId": 13,
+        "navNama": "Child Nav 1",
+        "navUrl": "anjay",
+        "navIcon": "fa fa fa fa-toggle-down",
+        "navModul": "navigasi1",
+        "navParentid": 9
+    },
+    {
+        "navId": 14,
+        "navNama": "Role",
+        "navUrl": "role",
+        "navIcon": "fa fa fa-briefcase",
+        "navModul": "role",
+        "navParentid": 6
+    }
+]

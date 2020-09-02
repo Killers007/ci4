@@ -42,6 +42,7 @@ class Autoload extends AutoloadConfig
 	public $psr4 = [
 		APP_NAMESPACE => APPPATH, // For custom app namespace
 		'Config'      => APPPATH . 'Config',
+		'Firebase'   => APPPATH . 'ThirdParty/Firebase',
 	];
 
 	/**
@@ -63,6 +64,6 @@ class Autoload extends AutoloadConfig
 	 * @var array
 	 */
 	public $classmap = [
-		'Template' => APPPATH .'/Libraries/Template.php'
+		// 'Template' => APPPATH .'/Libraries/Template.php'
 	];
 }

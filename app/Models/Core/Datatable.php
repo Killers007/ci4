@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-namespace App\Models;
+namespace App\Models\Core;
 
 use CodeIgniter\Model;
 
@@ -14,10 +14,13 @@ class Datatable extends Model
     protected $showQuery = ENVIRONMENT == 'development';
 
     /**
-     * Set parameter datatable
-     * @param array $params [description]
+     * Undocumented function
+     *
+     * @param array $params
+     * @return void
      */
-    function setParams($params = []){
+    function setParams($params = [])
+    {
         $this->params = $params;
         return $this;
     }
@@ -26,7 +29,8 @@ class Datatable extends Model
      * Set Fungsi yang akan digunakan untuk build datatable
      * @param string $function [description]
      */
-    function setFunction(string $function){
+    function setFunction(string $function)
+    {
         $this->function = $function;
         return $this;
     }
@@ -94,22 +98,24 @@ class Datatable extends Model
 
             $data = call_user_func_array(array($this, $this->function), $this->params)->find();
             $query = (string)$this->getLastQuery();
-            
+
             // Total yang terlimit
             $recordTotal = count($data);
 
             return array(
-                'draw' => intval($_GET['draw']), 
-                'recordsTotal' => $recordTotal, 
-                'recordsFiltered' => $recordsFiltered, 
-                'data' => $data, 
+                'draw' => intval($_GET['draw']),
+                'recordsTotal' => $recordTotal,
+                'recordsFiltered' => $recordsFiltered,
+                'data' => $data,
                 'query' => $query
             );
         }
         // Non Serverside
         else {
+            $data = call_user_func_array(array($this, $this->function), $this->params)->find();
+            $query = (string)$this->getLastQuery();
             return array(
-                'data' => call_user_func_array(array($this, $this->function), $this->params)->find(),
+                'data' => $data,
                 'query' => $query
             );
         }
@@ -124,7 +130,8 @@ class Datatable extends Model
      * 
      * @return [type] [description]
      */
-    function datatable(){
+    function datatable()
+    {
         return $this->table($this->table);
     }
 }

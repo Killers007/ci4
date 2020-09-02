@@ -1,27 +1,23 @@
 <?php
 
-namespace App\Models;
+namespace App\Modules\Api\Models;
 
 use App\Models\Core\Datatable;
 
-class MahasiswaModel extends Datatable
+class TesModel extends Datatable
 {
     protected $table      = 'sia_m_mahasiswa';
     protected $primaryKey = 'mhsNiu';
 
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['mhsNama', 'mhsNiu'];
+    protected $allowedFields = ['name', 'email'];
 
-    protected $useTimestamps = false;
-    // protected $createdField  = 'created_at';
-    // protected $updatedField  = 'updated_at';
-    // protected $deletedField  = 'deleted_at';
+    protected $useTimestamps = true;
+    protected $createdField  = 'mhsCreateAt';
+    protected $updatedField  = 'mhsUpdateAt';
 
-    protected $validationRules    = [
-        // 'mhsNiu' => 'is_unique[sia_m_mahasiswa.mhsNiu, mhsNiu, {mhsNiu}]',
-    ];
-
+    protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
 

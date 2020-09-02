@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+// php anjay route:update -i false -m Admin
+
 /*
  * --------------------------------------------------------------------
  * CodeIgniter command-line tools

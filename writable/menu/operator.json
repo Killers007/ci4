@@ -1,0 +1,66 @@
+[
+    {
+        "navId": 1,
+        "navNama": "Dashboard",
+        "navUrl": "admin\/dashboard",
+        "navIcon": "fa fa fa fa-briefcase",
+        "navModul": "jalur_masuk",
+        "navParentid": null
+    },
+    {
+        "navId": 2,
+        "navNama": "Pra Tes Kesehatan",
+        "navUrl": "",
+        "navIcon": "fa fa-desktop",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 3,
+        "navNama": "Kategori Kliniks",
+        "navUrl": "kategori_klinik",
+        "navIcon": "fa fa fa-bell",
+        "navModul": "kategori_klinik",
+        "navParentid": 2
+    },
+    {
+        "navId": 4,
+        "navNama": "Setting",
+        "navUrl": "",
+        "navIcon": "fa fa-cogs",
+        "navModul": "",
+        "navParentid": null
+    },
+    {
+        "navId": 5,
+        "navNama": "Modul",
+        "navUrl": "modul",
+        "navIcon": "fa fa-asterisk",
+        "navModul": "modul",
+        "navParentid": 4
+    },
+    {
+        "navId": 6,
+        "navNama": "Nested Menu",
+        "navUrl": "",
+        "navIcon": "fa fa-arrows",
+        "navModul": "",
+        "navParentid": 4
+    },
+    {
+        "navId": 7,
+        "navNama": "Menu Navigasi",
+        "navUrl": "admin\/dashboard\/nestable",
+        "navIcon": "fa fa fa fa-toggle-down",
+        "navModul": "navigasi",
+        "navParentid": 6
+    },
+    {
+        "navId": 8,
+        "navNama": "Child Nav 2",
+        "navUrl": "navigasi2",
+        "navIcon": "fa fa-toggle-down",
+        "navModul": "navigasi2",
+        "navParentid": 6
+    }
+]

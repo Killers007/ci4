@@ -71,7 +71,7 @@ class Serve extends BaseCommand
 	 *
 	 * @var string
 	 */
-	protected $name = 'mabar';
+	protected $name = 'serve';
 
 	/**
 	 * Description

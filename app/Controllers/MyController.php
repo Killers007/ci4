@@ -17,7 +17,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Libraries\Template;
 
-class BaseController extends Controller
+class MyController extends Controller
 {
 
 	/**

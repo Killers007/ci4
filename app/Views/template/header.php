@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
 Template Name: Frest HTML Admin Template
@@ -49,7 +48,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <!-- END: Custom CSS-->
     <link rel="stylesheet" href="/app-assets/css/font-awesome.min.css" type="text/css" />
-    
+
     <script src="/app-assets/vendors/js/vendors.min.js"></script>
 
 </head>
@@ -61,14 +60,16 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <!-- BEGIN: Header-->
     <div class="header-navbar-shadow"></div>
-    <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top ">
+    <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top  navbar-dark">
         <div class="navbar-wrapper">
             <div class="navbar-container content">
                 <div class="navbar-collapse" id="navbar-mobile">
                     <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+
                         <ul class="nav navbar-nav">
                             <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon bx bx-menu"></i></a></li>
                         </ul>
+
                         <ul class="nav navbar-nav bookmark-icons">
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-1-column.html" data-toggle="tooltip" data-placement="top" title="1-Column"><i class="ficon bx bx-file"></i></a></li>
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-2-columns.html" data-toggle="tooltip" data-placement="top" title="2-Columns"><i class="ficon bx bx-sidebar"></i></a></li>
@@ -85,6 +86,13 @@ License: You must have a valid license purchased only from themeforest(the above
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
+                        <li class="nav-item d-block mt-2">
+                            <div class="custom-control custom-switch custom-switch-glow custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="changeTheme">
+                                <label class="custom-control-label" for="changeTheme">
+                                </label>
+                            </div>
+                        </li>
                         <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us mr-50"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr mr-50"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de mr-50"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt mr-50"></i> Portuguese</a></div>
                         </li>
